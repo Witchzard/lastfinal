@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#4f46e5",
+              "on-surface-variant": "#464555",
+              "tertiary-fixed-dim": "#4edea3",
+              "on-primary-fixed-variant": "#3323cc",
+              "on-tertiary": "#ffffff",
+              "surface-container": "#eaeef2",
+              "surface-container-low": "#f0f4f8",
+              "on-secondary-fixed-variant": "#38485d",
+              "inverse-surface": "#2c3134",
+              "inverse-primary": "#c3c0ff",
+              "secondary-fixed-dim": "#b7c8e1",
+              "inverse-on-surface": "#edf1f5",
+              "tertiary-container": "#006e4b",
+              "on-tertiary-fixed-variant": "#005236",
+              "surface-container-highest": "#dfe3e7",
+              "surface-tint": "#4d44e3",
+              "on-background": "#171c1f",
+              "surface-dim": "#d6dade",
+              "primary": "#3525cd",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#d3e4fe",
+              "primary-fixed": "#e2dfff",
+              "primary-fixed-dim": "#c3c0ff",
+              "tertiary": "#005338",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#e4e9ed",
+              "tertiary-fixed": "#6ffbbe",
+              "outline": "#777587",
+              "surface": "#f6fafe",
+              "on-tertiary-container": "#67f4b7",
+              "on-secondary-fixed": "#0b1c30",
+              "secondary-container": "#d0e1fb",
+              "outline-variant": "#c7c4d8",
+              "surface-bright": "#f6fafe",
+              "error": "#ba1a1a",
+              "background": "#f6fafe",
+              "on-secondary-container": "#54647a",
+              "on-tertiary-fixed": "#002113",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#dad7ff",
+              "surface-variant": "#dfe3e7"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#f6fafe] dark:bg-slate-950 w-full top-0 px-6 py-4 z-50">
+<div class="flex justify-between items-center w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<button class="p-2 hover:bg-[#eaeef2] dark:hover:bg-slate-800 transition-colors rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined text-on-surface-variant">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-xl text-[#4f46e5] dark:text-[#818cf8]">The Sanctuary</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-6 items-center pr-6">
+<span class="text-[#464555] dark:text-slate-400 font-semibold hover:text-[#4f46e5] cursor-pointer transition-colors">Today</span>
+<span class="text-[#4f46e5] font-bold">Stats</span>
+<span class="text-[#464555] dark:text-slate-400 font-semibold hover:text-[#4f46e5] cursor-pointer transition-colors">Progress</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="text-sm font-bold text-[#4f46e5]">7🔥</span>
+<div class="w-8 h-8 rounded-full bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a man with friendly expression against a clean soft blue studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAopF2Bl2Zmk6BlgwjBqMPtB0Y7wJXZoEAqD9TYd13zxbSoCbme6wBy9pIB6OrcbVO5Xij29XpVQ1K8V3sdSPFvnPA6F55_QWWf48m47gpJ7bilJDfVsb_jltRsWfq1ET5vEKHL_NfhDXT2nLXHysjwGJ0ML4cmDHbVdDYrxH3OD2QywQPd7lw3D0yc6yZotPwhWGZHfr9lgf27lvRnMPmWlgELMptXjb1rhnj5AocYKN0DLycBIowyTGlgjdCKmsJSN2P1eATKsg"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8 pb-32">
+<!-- Hero Section: Habit Overview -->
+<section class="relative mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="inline-block bg-tertiary/10 text-tertiary px-4 py-1 rounded-full text-sm font-bold mb-4">Mind &amp; Body</span>
+<h2 class="font-headline font-extrabold text-5xl md:text-7xl text-on-surface tracking-tighter leading-none mb-4">Daily Exercise</h2>
+<p class="text-on-surface-variant text-lg max-w-md">Building strength and endurance through consistent movement.</p>
+</div>
+<!-- Strength Orb (Custom Component) -->
+<div class="relative w-48 h-48 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-[12px] border-surface-container-high"></div>
+<div class="absolute inset-0 rounded-full border-[12px] border-tertiary border-t-transparent border-l-transparent rotate-45 shadow-[0_0_20px_rgba(0,83,56,0.2)]"></div>
+<div class="text-center">
+<span class="block font-headline font-extrabold text-4xl text-tertiary">84%</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Strength</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Streak Card -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-lg p-8 flex flex-col justify-between overflow-hidden relative group transition-all hover:bg-surface">
+<div class="z-10">
+<p class="text-on-surface-variant font-semibold text-sm mb-1">Current Streak</p>
+<h3 class="font-headline font-extrabold text-6xl text-primary">12</h3>
+<p class="text-primary/70 font-bold mt-2">Days active</p>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="mt-8 flex gap-1">
+<div class="h-1.5 flex-1 rounded-full bg-tertiary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-tertiary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-tertiary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-tertiary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-surface-container-high"></div>
+</div>
+</div>
+<!-- Stats Card -->
+<div class="md:col-span-8 bg-primary-container text-on-primary-container rounded-lg p-8 relative overflow-hidden">
+<div class="flex justify-between items-start mb-12">
+<div>
+<h3 class="font-headline font-bold text-2xl mb-1">Impact Analysis</h3>
+<p class="opacity-80 text-sm">Vitality increase over last 30 days</p>
+</div>
+<span class="material-symbols-outlined text-3xl">insights</span>
+</div>
+<div class="flex items-end gap-3 h-32">
+<div class="w-full bg-white/20 rounded-t-lg h-[40%]"></div>
+<div class="w-full bg-white/20 rounded-t-lg h-[60%]"></div>
+<div class="w-full bg-white/20 rounded-t-lg h-[55%]"></div>
+<div class="w-full bg-white/20 rounded-t-lg h-[80%]"></div>
+<div class="w-full bg-white/40 rounded-t-lg h-[95%]"></div>
+<div class="w-full bg-white/20 rounded-t-lg h-[70%]"></div>
+<div class="w-full bg-white/20 rounded-t-lg h-[85%]"></div>
+</div>
+</div>
+<!-- Calendar View -->
+<div class="md:col-span-7 bg-surface-container rounded-lg p-8">
+<div class="flex justify-between items-center mb-8">
+<h3 class="font-headline font-bold text-xl">Consistency Matrix</h3>
+<div class="flex gap-2">
+<button class="p-2 rounded-full hover:bg-surface-container-high"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 rounded-full hover:bg-surface-container-high"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-4">
+<!-- Day Labels -->
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Mon</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Tue</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Wed</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Thu</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Fri</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Sat</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Sun</div>
+<!-- Days -->
+<div class="aspect-square flex items-center justify-center text-sm font-semibold opacity-30">28</div>
+<div class="aspect-square flex items-center justify-center text-sm font-semibold opacity-30">29</div>
+<div class="aspect-square flex items-center justify-center text-sm font-semibold opacity-30">30</div>
+<div class="aspect-square bg-surface-container-lowest rounded-full flex items-center justify-center text-sm font-bold shadow-sm">1</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">2</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">3</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">4</div>
+<div class="aspect-square bg-surface-container-lowest rounded-full flex items-center justify-center text-sm font-bold shadow-sm">5</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">6</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">7</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">8</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">9</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">10</div>
+<div class="aspect-square bg-tertiary-fixed text-on-tertiary-fixed rounded-full flex items-center justify-center text-sm font-bold">11</div>
+<div class="aspect-square bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg shadow-primary/30 ring-4 ring-primary/20">12</div>
+<div class="aspect-square bg-surface-container-low border border-outline-variant/20 rounded-full flex items-center justify-center text-sm font-bold opacity-40">13</div>
+<div class="aspect-square bg-surface-container-low border border-outline-variant/20 rounded-full flex items-center justify-center text-sm font-bold opacity-40">14</div>
+</div>
+</div>
+<!-- Best Times Card -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="bg-surface-container-low rounded-lg p-6 flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">alarm</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Optimal Window</p>
+<h4 class="font-headline font-bold text-xl">07:30 AM — 08:15 AM</h4>
+</div>
+</div>
+<div class="bg-surface-container-lowest border-l-4 border-tertiary rounded-lg p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="font-bold text-sm">Recent Activity</span>
+<span class="text-xs text-on-surface-variant">View all</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+<div class="flex-1">
+<p class="text-sm font-semibold">Morning Yoga &amp; HIIT</p>
+<p class="text-[10px] text-on-surface-variant">Today, 07:45 AM</p>
+</div>
+<span class="text-xs font-bold text-tertiary">+12 pts</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+<div class="flex-1">
+<p class="text-sm font-semibold">Evening Power Walk</p>
+<p class="text-[10px] text-on-surface-variant">Yesterday, 06:20 PM</p>
+</div>
+<span class="text-xs font-bold text-tertiary">+8 pts</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Orbs Section -->
+<section class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-surface-container-low p-6 rounded-lg text-center">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-4">Frequency</p>
+<div class="w-24 h-24 mx-auto mb-4 relative flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-4 border-surface-container-high"></div>
+<div class="absolute inset-0 rounded-full border-4 border-primary border-t-transparent -rotate-45"></div>
+<span class="font-headline font-bold text-xl">5/7</span>
+</div>
+<p class="text-xs font-semibold">Days per week</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg text-center">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-4">Volume</p>
+<div class="w-24 h-24 mx-auto mb-4 relative flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-4 border-surface-container-high"></div>
+<div class="absolute inset-0 rounded-full border-4 border-tertiary border-r-transparent rotate-12"></div>
+<span class="font-headline font-bold text-xl">12h</span>
+</div>
+<p class="text-xs font-semibold">Total this month</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg text-center">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-4">Precision</p>
+<div class="w-24 h-24 mx-auto mb-4 relative flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-4 border-surface-container-high"></div>
+<div class="absolute inset-0 rounded-full border-4 border-on-secondary-container"></div>
+<span class="font-headline font-bold text-xl">98%</span>
+</div>
+<p class="text-xs font-semibold">Time adherence</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg text-center">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-4">Recovery</p>
+<div class="w-24 h-24 mx-auto mb-4 relative flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-4 border-surface-container-high"></div>
+<div class="absolute inset-0 rounded-full border-4 border-error border-b-transparent"></div>
+<span class="font-headline font-bold text-xl">High</span>
+</div>
+<p class="text-xs font-semibold">Status level</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-center pb-8">
+<div class="bg-[#4f46e5]/80 backdrop-blur-xl fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full px-2 py-2 mb-safe flex justify-between items-center shadow-[0_32px_64px_-15px_rgba(79,70,229,0.3)]">
+<div class="flex flex-col items-center justify-center text-white/70 p-3 hover:bg-white/10 rounded-full transition-all cursor-pointer">
+<span class="material-symbols-outlined">today</span>
+<span class="font-['Manrope'] text-[11px] font-semibold tracking-wide">Today</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-white/20 text-white rounded-full p-3 transition-all cursor-pointer">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="font-['Manrope'] text-[11px] font-semibold tracking-wide">Stats</span>
+</div>
+<div class="flex flex-col items-center justify-center text-white/70 p-3 hover:bg-white/10 rounded-full transition-all cursor-pointer">
+<span class="material-symbols-outlined">insights</span>
+<span class="font-['Manrope'] text-[11px] font-semibold tracking-wide">Progress</span>
+</div>
+<div class="flex flex-col items-center justify-center text-white/70 p-3 hover:bg-white/10 rounded-full transition-all cursor-pointer">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Manrope'] text-[11px] font-semibold tracking-wide">Settings</span>
+</div>
+</div>
+</nav>
+</body></html>
